@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var authHelper = AuthHelper()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            if authHelper.token.isEmpty {
+                
+                TokenInput(token: "")
+            } else {
+                GamesPage()
+            }
         }
-        .padding()
+        
     }
 }
 

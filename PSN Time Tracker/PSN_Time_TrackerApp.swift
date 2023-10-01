@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct PSN_Time_TrackerApp: App {
+    @StateObject private var gamesData = GamesData()
+    @StateObject private var profileData = ProfileData()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(gamesData).environmentObject(profileData)
         }
     }
 }

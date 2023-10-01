@@ -7,18 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893503672AC9AEA900166800 /* TokenInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893503662AC9AEA900166800 /* TokenInput.swift */; };
 		89912F1D2AC8ABC900420E18 /* PSN_Time_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F1C2AC8ABC900420E18 /* PSN_Time_TrackerApp.swift */; };
 		89912F1F2AC8ABC900420E18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F1E2AC8ABC900420E18 /* ContentView.swift */; };
 		89912F212AC8ABCA00420E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89912F202AC8ABCA00420E18 /* Assets.xcassets */; };
 		89912F242AC8ABCA00420E18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89912F232AC8ABCA00420E18 /* Preview Assets.xcassets */; };
+		89912F2C2AC8AD7600420E18 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F2B2AC8AD7600420E18 /* Game.swift */; };
+		89912F2F2AC8AECA00420E18 /* GameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F2E2AC8AECA00420E18 /* GameCard.swift */; };
+		89912F322AC8B53B00420E18 /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F312AC8B53B00420E18 /* GameList.swift */; };
+		89912F342AC8B66400420E18 /* GamesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F332AC8B66400420E18 /* GamesData.swift */; };
+		89912F362AC8B70400420E18 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F352AC8B70400420E18 /* APIHelper.swift */; };
+		89912F382AC8BC1300420E18 /* GamesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F372AC8BC1300420E18 /* GamesPage.swift */; };
+		89912F3C2AC8DAE200420E18 /* GameTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F3B2AC8DAE200420E18 /* GameTitle.swift */; };
+		89912F3E2AC8DD7400420E18 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F3D2AC8DD7400420E18 /* ProfileData.swift */; };
+		89912F402AC8DD9A00420E18 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F3F2AC8DD9A00420E18 /* Profile.swift */; };
+		89912F422AC8E1A900420E18 /* TrophyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F412AC8E1A900420E18 /* TrophyInfo.swift */; };
+		89912F442AC8E2BB00420E18 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F432AC8E2BB00420E18 /* CircularProgressView.swift */; };
+		89912F462AC8E4B800420E18 /* Trophy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F452AC8E4B800420E18 /* Trophy.swift */; };
+		89912F482AC8E77100420E18 /* TrophyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F472AC8E77100420E18 /* TrophyGroup.swift */; };
+		89912F4A2AC8E80B00420E18 /* TrophyGroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F492AC8E80B00420E18 /* TrophyGroupData.swift */; };
+		89912F4C2AC8E92600420E18 /* TrophyGroupsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F4B2AC8E92600420E18 /* TrophyGroupsList.swift */; };
+		89912F4E2AC8E9CA00420E18 /* TrophyGroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F4D2AC8E9CA00420E18 /* TrophyGroupRow.swift */; };
+		89912F502AC8EABD00420E18 /* TrophyGroupsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F4F2AC8EABD00420E18 /* TrophyGroupsPage.swift */; };
+		89912F522AC8EF7700420E18 /* TrophiesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F512AC8EF7700420E18 /* TrophiesList.swift */; };
+		89912F542AC8EFE000420E18 /* TrophyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F532AC8EFE000420E18 /* TrophyRow.swift */; };
+		89912F562AC8F17300420E18 /* TrophiesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F552AC8F17300420E18 /* TrophiesPage.swift */; };
+		89912F582AC8F27E00420E18 /* TrophyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F572AC8F27E00420E18 /* TrophyData.swift */; };
+		89DC8B982AC9C7540001603F /* AuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC8B972AC9C7540001603F /* AuthHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		893503662AC9AEA900166800 /* TokenInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenInput.swift; sourceTree = "<group>"; };
 		89912F192AC8ABC900420E18 /* PSN Time Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PSN Time Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89912F1C2AC8ABC900420E18 /* PSN_Time_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSN_Time_TrackerApp.swift; sourceTree = "<group>"; };
 		89912F1E2AC8ABC900420E18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89912F202AC8ABCA00420E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89912F232AC8ABCA00420E18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89912F2B2AC8AD7600420E18 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		89912F2E2AC8AECA00420E18 /* GameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCard.swift; sourceTree = "<group>"; };
+		89912F312AC8B53B00420E18 /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
+		89912F332AC8B66400420E18 /* GamesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesData.swift; sourceTree = "<group>"; };
+		89912F352AC8B70400420E18 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		89912F372AC8BC1300420E18 /* GamesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesPage.swift; sourceTree = "<group>"; };
+		89912F3B2AC8DAE200420E18 /* GameTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTitle.swift; sourceTree = "<group>"; };
+		89912F3D2AC8DD7400420E18 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		89912F3F2AC8DD9A00420E18 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		89912F412AC8E1A900420E18 /* TrophyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyInfo.swift; sourceTree = "<group>"; };
+		89912F432AC8E2BB00420E18 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		89912F452AC8E4B800420E18 /* Trophy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trophy.swift; sourceTree = "<group>"; };
+		89912F472AC8E77100420E18 /* TrophyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyGroup.swift; sourceTree = "<group>"; };
+		89912F492AC8E80B00420E18 /* TrophyGroupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyGroupData.swift; sourceTree = "<group>"; };
+		89912F4B2AC8E92600420E18 /* TrophyGroupsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyGroupsList.swift; sourceTree = "<group>"; };
+		89912F4D2AC8E9CA00420E18 /* TrophyGroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyGroupRow.swift; sourceTree = "<group>"; };
+		89912F4F2AC8EABD00420E18 /* TrophyGroupsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyGroupsPage.swift; sourceTree = "<group>"; };
+		89912F512AC8EF7700420E18 /* TrophiesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophiesList.swift; sourceTree = "<group>"; };
+		89912F532AC8EFE000420E18 /* TrophyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyRow.swift; sourceTree = "<group>"; };
+		89912F552AC8F17300420E18 /* TrophiesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophiesPage.swift; sourceTree = "<group>"; };
+		89912F572AC8F27E00420E18 /* TrophyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyData.swift; sourceTree = "<group>"; };
+		89DC8B972AC9C7540001603F /* AuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +97,8 @@
 		89912F1B2AC8ABC900420E18 /* PSN Time Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				89912F2D2AC8AEB500420E18 /* Views */,
+				89912F2A2AC8AD5500420E18 /* Models */,
 				89912F1C2AC8ABC900420E18 /* PSN_Time_TrackerApp.swift */,
 				89912F1E2AC8ABC900420E18 /* ContentView.swift */,
 				89912F202AC8ABCA00420E18 /* Assets.xcassets */,
@@ -65,6 +113,51 @@
 				89912F232AC8ABCA00420E18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89912F2A2AC8AD5500420E18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89912F2B2AC8AD7600420E18 /* Game.swift */,
+				89912F332AC8B66400420E18 /* GamesData.swift */,
+				89912F352AC8B70400420E18 /* APIHelper.swift */,
+				89912F3D2AC8DD7400420E18 /* ProfileData.swift */,
+				89912F3F2AC8DD9A00420E18 /* Profile.swift */,
+				89912F452AC8E4B800420E18 /* Trophy.swift */,
+				89912F472AC8E77100420E18 /* TrophyGroup.swift */,
+				89912F492AC8E80B00420E18 /* TrophyGroupData.swift */,
+				89912F572AC8F27E00420E18 /* TrophyData.swift */,
+				89DC8B972AC9C7540001603F /* AuthHelper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89912F2D2AC8AEB500420E18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89912F392AC8DA9D00420E18 /* Games */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89912F392AC8DA9D00420E18 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				89912F3B2AC8DAE200420E18 /* GameTitle.swift */,
+				89912F2E2AC8AECA00420E18 /* GameCard.swift */,
+				89912F312AC8B53B00420E18 /* GameList.swift */,
+				89912F372AC8BC1300420E18 /* GamesPage.swift */,
+				89912F412AC8E1A900420E18 /* TrophyInfo.swift */,
+				89912F432AC8E2BB00420E18 /* CircularProgressView.swift */,
+				89912F4B2AC8E92600420E18 /* TrophyGroupsList.swift */,
+				89912F4D2AC8E9CA00420E18 /* TrophyGroupRow.swift */,
+				89912F4F2AC8EABD00420E18 /* TrophyGroupsPage.swift */,
+				89912F512AC8EF7700420E18 /* TrophiesList.swift */,
+				89912F532AC8EFE000420E18 /* TrophyRow.swift */,
+				89912F552AC8F17300420E18 /* TrophiesPage.swift */,
+				893503662AC9AEA900166800 /* TokenInput.swift */,
+			);
+			path = Games;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +230,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89912F362AC8B70400420E18 /* APIHelper.swift in Sources */,
 				89912F1F2AC8ABC900420E18 /* ContentView.swift in Sources */,
+				89912F2F2AC8AECA00420E18 /* GameCard.swift in Sources */,
+				89912F482AC8E77100420E18 /* TrophyGroup.swift in Sources */,
+				89912F3E2AC8DD7400420E18 /* ProfileData.swift in Sources */,
+				89912F502AC8EABD00420E18 /* TrophyGroupsPage.swift in Sources */,
+				89912F322AC8B53B00420E18 /* GameList.swift in Sources */,
+				89DC8B982AC9C7540001603F /* AuthHelper.swift in Sources */,
+				89912F422AC8E1A900420E18 /* TrophyInfo.swift in Sources */,
+				89912F382AC8BC1300420E18 /* GamesPage.swift in Sources */,
+				89912F542AC8EFE000420E18 /* TrophyRow.swift in Sources */,
+				89912F3C2AC8DAE200420E18 /* GameTitle.swift in Sources */,
+				89912F582AC8F27E00420E18 /* TrophyData.swift in Sources */,
+				89912F2C2AC8AD7600420E18 /* Game.swift in Sources */,
+				89912F462AC8E4B800420E18 /* Trophy.swift in Sources */,
+				89912F402AC8DD9A00420E18 /* Profile.swift in Sources */,
 				89912F1D2AC8ABC900420E18 /* PSN_Time_TrackerApp.swift in Sources */,
+				89912F4A2AC8E80B00420E18 /* TrophyGroupData.swift in Sources */,
+				89912F562AC8F17300420E18 /* TrophiesPage.swift in Sources */,
+				89912F522AC8EF7700420E18 /* TrophiesList.swift in Sources */,
+				89912F4E2AC8E9CA00420E18 /* TrophyGroupRow.swift in Sources */,
+				893503672AC9AEA900166800 /* TokenInput.swift in Sources */,
+				89912F442AC8E2BB00420E18 /* CircularProgressView.swift in Sources */,
+				89912F4C2AC8E92600420E18 /* TrophyGroupsList.swift in Sources */,
+				89912F342AC8B66400420E18 /* GamesData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
