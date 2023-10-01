@@ -14,6 +14,7 @@ class AuthHelper: ObservableObject {
 
     
     var token: String {
+        print("ssoToken \(ssoToken)")
         return ssoToken
     }
 }
