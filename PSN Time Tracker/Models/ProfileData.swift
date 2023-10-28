@@ -8,7 +8,7 @@
 import Foundation
 
 final class ProfileData: ObservableObject {
-    @Published var profile: Profile = Profile(avatarUrl: "")
+    @Published var profile: Profile = Profile(avatarUrl: "", name: "")
     
     func fetchProfile() async {
         do {
@@ -16,7 +16,7 @@ final class ProfileData: ObservableObject {
             
             await MainActor.run {
                 if profile.avatarUrl.starts(with: "http://") {
-                    self.profile = Profile(avatarUrl: profile.avatarUrl.replacingOccurrences(of: "http://", with: "https://"))
+                    self.profile = Profile(avatarUrl: profile.avatarUrl.replacingOccurrences(of: "http://", with: "https://"), name: profile.name)
                 } else {
                     self.profile = profile
                 }

@@ -14,7 +14,7 @@ struct TrophyGroupRow: View {
             AsyncImage(url: URL(string: trophyGroup.icon)) {
                 image in
                 image.image?.resizable().cornerRadius(10)
-            }.frame(width: 40, height: 40)
+            }.frame(width: 80, height: 40)
             Text(trophyGroup.name)
         }
     }

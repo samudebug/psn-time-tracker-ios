@@ -16,9 +16,9 @@ struct GameList: View {
                     TrophyGroupsPage(game: game)
                 } label: {
                     GameCard(game: game)
-                }
+                }.buttonStyle(.plain)
             }
-        }
+        }.listStyle(.plain).navigationTitle("Games")
     }
 }
 

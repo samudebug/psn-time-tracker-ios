@@ -18,7 +18,7 @@ struct TrophyGroupsPage: View {
                 ProgressView().progressViewStyle(CircularProgressViewStyle())
                 
             } else {
-                TrophyGroupsList(trophyGroups: trophyGroups, titleId: game.title_id).navigationTitle("Groups")
+                TrophyGroupsList(trophyGroups: trophyGroups, titleId: game.title_id)
             }
         }.animation(.spring(), value: loading).onAppear {
             if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {

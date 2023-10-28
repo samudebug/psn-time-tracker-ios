@@ -17,17 +17,14 @@ struct GamesPage: View {
                 ProgressView().progressViewStyle(CircularProgressViewStyle())
             } else {
                 if !gamesData.games.isEmpty {
-                    GameList(games: gamesData.games).navigationTitle("Games")
-                        .animation(.easeIn, value: loading)
-                        .toolbar {
-                        ToolbarItem(placement: .topBarLeading) {
-                            if !profiledata.profile.avatarUrl.isEmpty {
-                                AsyncImage(url: URL( string: profiledata.profile.avatarUrl)){
-                                    image in image.image?.resizable()
-                                }.frame(width: 40, height: 40)
-                            }
+                    VStack(alignment: .leading) {
+                        if !profiledata.profile.avatarUrl.isEmpty {
+                            ProfileView(profile: profiledata.profile)
                         }
-                        }
+                        GameList(games: gamesData.games)
+                            .animation(.easeIn, value: loading)
+                            
+                    }
                 } else {
                     Text("No games recorded");
                 }

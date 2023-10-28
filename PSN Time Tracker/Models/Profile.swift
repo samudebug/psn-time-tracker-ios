@@ -9,4 +9,5 @@ import Foundation
 
 struct Profile: Hashable, Codable {
     var avatarUrl: String
+    var name: String
 }
