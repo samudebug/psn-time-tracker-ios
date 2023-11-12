@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8918D7EC2AED96ED00ACF62C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918D7EB2AED96ED00ACF62C /* ProfileView.swift */; };
 		893503672AC9AEA900166800 /* TokenInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893503662AC9AEA900166800 /* TokenInput.swift */; };
+		8936E5032B018E2E0074750C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8936E5022B018E2E0074750C /* WebView.swift */; };
 		89912F1D2AC8ABC900420E18 /* PSN_Time_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F1C2AC8ABC900420E18 /* PSN_Time_TrackerApp.swift */; };
 		89912F1F2AC8ABC900420E18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89912F1E2AC8ABC900420E18 /* ContentView.swift */; };
 		89912F212AC8ABCA00420E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89912F202AC8ABCA00420E18 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		8918D7EB2AED96ED00ACF62C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		893503662AC9AEA900166800 /* TokenInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenInput.swift; sourceTree = "<group>"; };
+		8936E5022B018E2E0074750C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		89912F192AC8ABC900420E18 /* PSN Time Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PSN Time Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89912F1C2AC8ABC900420E18 /* PSN_Time_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSN_Time_TrackerApp.swift; sourceTree = "<group>"; };
 		89912F1E2AC8ABC900420E18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 				8918D7EB2AED96ED00ACF62C /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		8936E5012B018E1F0074750C /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				8936E5022B018E2E0074750C /* WebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		89912F102AC8ABC800420E18 = {
@@ -145,6 +155,7 @@
 		89912F2D2AC8AEB500420E18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8936E5012B018E1F0074750C /* WebView */,
 				8918D7EA2AED96E200ACF62C /* Profile */,
 				89912F392AC8DA9D00420E18 /* Games */,
 			);
@@ -265,6 +276,7 @@
 				89912F4E2AC8E9CA00420E18 /* TrophyGroupRow.swift in Sources */,
 				893503672AC9AEA900166800 /* TokenInput.swift in Sources */,
 				89912F442AC8E2BB00420E18 /* CircularProgressView.swift in Sources */,
+				8936E5032B018E2E0074750C /* WebView.swift in Sources */,
 				89912F4C2AC8E92600420E18 /* TrophyGroupsList.swift in Sources */,
 				89912F342AC8B66400420E18 /* GamesData.swift in Sources */,
 			);

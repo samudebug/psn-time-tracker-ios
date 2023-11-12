@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView {
             if authHelper.token.isEmpty {
                 
-                TokenInput(token: "")
+                TokenInput()
             } else {
                 GamesPage()
             }

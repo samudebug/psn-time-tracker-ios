@@ -8,23 +8,27 @@
 import SwiftUI
 
 struct TokenInput: View {
-    @State var token: String
-    @AppStorage("ssoToken") var ssoToken: String?
+    @State var presentingSheet = false
     var body: some View {
         VStack(alignment: .leading) {
-            Text("1. Faça Login no site da [Playstation](https://store.playstation.com)")
-            Text("2. Abra [Este Link](https://ca.account.sony.com/api/v1/ssocookie)")
-            Text("3. Copie o valor de 'npsso' e o cole abaixo")
-            TextField("npsso", text: $token).border(.primary).cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+            Text("Faça Login com a sua PSN para continuar")
             Button {
-                ssoToken = $token.wrappedValue
+                presentingSheet.toggle()
             } label: {
                 Text("Login")
             }.buttonStyle(.borderedProminent)
-        }.padding()
+        }.padding().sheet(isPresented: $presentingSheet) {
+            WebView().toolbar {
+                Button {
+                    presentingSheet.toggle()
+                } label: {
+                    Text("Cancelar")
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    TokenInput(token: "")
+    TokenInput()
 }
