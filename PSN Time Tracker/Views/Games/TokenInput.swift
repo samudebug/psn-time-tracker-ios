@@ -18,11 +18,13 @@ struct TokenInput: View {
                 Text("Login")
             }.buttonStyle(.borderedProminent)
         }.padding().sheet(isPresented: $presentingSheet) {
-            WebView().toolbar {
-                Button {
-                    presentingSheet.toggle()
-                } label: {
-                    Text("Cancelar")
+            NavigationStack {
+                WebView().toolbar {
+                    Button {
+                        presentingSheet.toggle()
+                    } label: {
+                        Text("Cancelar")
+                    }
                 }
             }
         }

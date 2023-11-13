@@ -10,29 +10,54 @@ import WebKit
 
 struct WebView: UIViewRepresentable {
     @AppStorage("ssoToken") var ssoToken: String = ""
-    var webView = WKWebView()
+    var webView: WKWebView
     func makeCoordinator() -> Coordinator {
         return Coordinator(parent: self)
     }
     
+    init() {
+        self.webView = WKWebView()
+    }
+    
+    
     func makeUIView(context: Context) -> WKWebView {
         context.coordinator.addProgressObserver()
         webView.navigationDelegate = context.coordinator
+        let request = URLRequest(url: URL(string: "https://store.playstation.com")!)
+        webView.load(request)
         return webView
     }
     
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        let request = URLRequest(url: URL(string: "https://store.playstation.com")!)
-        uiView.load(request)
+       
     }
+    
+    static func dismantleUIView(_ uiView: WKWebView, coordinator: Coordinator) {
+        coordinator.removeProgressObserver()
+        uiView.navigationDelegate = nil
+    }
+    
+    
+    
+    
 }
 
 extension WebView {
     class Coordinator: NSObject, WKNavigationDelegate {
+        
+        
         private let parent: WebView
         
         init(parent: WebView) {
             self.parent = parent
+        }
+        
+        deinit {
+            parent.webView.navigationDelegate = nil
+        }
+        
+        func removeProgressObserver() {
+            parent.webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
         }
         
         func addProgressObserver() {
@@ -42,7 +67,8 @@ extension WebView {
         
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             let url = parent.webView.url?.absoluteString;
-            if ((url?.starts(with: "https://store.playstation.com")) != nil) {
+            guard url != nil else {return}
+            if (url!.starts(with: "https://store.playstation.com")) {
                 parent.webView.evaluateJavaScript("document.cookie", completionHandler: {
                     value, error in
                     guard error == nil else {return}
@@ -51,7 +77,8 @@ extension WebView {
                     }
                 })
             }
-            if ((url?.contains("ssoCookie")) != nil) {
+            print(url)
+            if (url!.contains("ssocookie")) {
                 parent.webView.evaluateJavaScript("document.body.innerText", completionHandler: {
                     value, error in
                     guard error == nil else {return}
